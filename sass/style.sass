@@ -1,0 +1,302 @@
+@import colors
+
+$transition: .3s
+
+body 
+	font-family: 'Helvetica', sans-serif
+	background-color: $color-body
+	color: #FFF
+	padding-left: 80px
+	@media (max-width: 991.98px)
+		padding-left: 0
+		padding-bottom: 80px
+
+@import fonts
+
+* 
+	outline: none !important
+
+img 
+	max-width: 100%
+	height: auto
+
+a 
+	text-decoration: none !important
+	transition: $transition
+
+.container-fluid
+	@media (min-width: 1200px)
+		padding-left: 50px
+		padding-right: 50px
+
+.btn 
+	font-size: 14px
+	border: 0
+	padding: 18px 40px
+	@media (max-width: 991.98px)
+		padding: 16px 24px
+	font-weight: bold
+	transition: $transition
+	color: #fff
+	min-width: 146px
+	border-radius: 0
+	background: $color-btn
+	transition: .35s
+	&:hover 
+		background: $color-btn2
+
+.btn-outline-info
+	border: 2px solid $color-btn
+	color: $color-btn
+	min-width: 198px
+	background: transparent
+	transition: $transition
+	path 
+		fill: $color-btn
+		transition: $transition
+	&:hover 
+		background: $color-btn2
+		color: #fff
+		path 
+			fill: #fff
+
+
+.h1, h1
+	font-size: 32px
+	@media (max-width: 991.98px)
+		font-size: 21px
+	line-height: 44px
+	font-family: 'Klavica', sans-serif
+	overflow: hidden
+
+.h2, h2
+	font-size: 24px
+	@media (max-width: 991.98px)
+		font-size: 16px
+	line-height: 34px
+	font-family: 'Klavica', sans-serif
+	overflow: hidden
+	color: $color-h2
+
+.fz-14
+	font-size: 14px
+
+.section-1
+	.nav 
+		position: fixed
+		z-index: 1000
+		left: 0
+		top: 0
+		bottom: 0
+		@media (max-width: 991.98px)
+			top: auto
+			right: 0
+		background-color: $color-menu
+		.nav1 
+			transition: $transition
+			width: 80px
+			height: 80px
+			@media (max-width: 575.98px)
+				width: 55px
+				height: 55px
+			&:not(:last-child)
+				border-bottom: 1px solid $color-menu2
+			&:first-child  
+				img
+					border-radius: 100px
+				@media (max-width: 575.98px)
+					width: 60px 
+			&:last-child 
+				background-color: #FFF
+			&:nth-child(5)
+				border-top: 1px solid $color-menu2 
+			&:hover 
+				background-color: $color-menu2
+		.active 
+			background-color: $color-menu2
+		.order-2, .order-3, .order-4 
+			border-right: 1px solid $color-menu2
+		.order-5
+			margin-left: auto
+
+.tooltip
+	left: -19px !important
+	.tooltip-inner
+		background-color: $color-h2	
+	.arrow
+		&::before
+			border-right-color: $color-h2 !important
+.show
+		opacity: 1 !important
+
+.header 
+	overflow: hidden
+	background-color: rgba(0, 125, 197, .5)
+	> .container-fluid
+		min-height: 50vh
+		display: flex
+		flex-direction: column
+		.my-auto
+			padding-top: 53px
+			padding-bottom: 53px
+	.form-control
+		border-radius: 0
+		padding: 28px 
+		@media (max-width: 991.98px)
+			padding: 26px
+
+.alert 
+	padding: 18px 0 24px
+	@media (max-width: 991.98px)
+		padding: 15px 0 20px
+	color: $color-green
+	.close 
+		position: static
+		transition: $transition
+		padding: 0
+		color: $color-h2
+
+.section-2 
+	.car
+		background-color: #fff
+		color: $color-h2
+		border: 1px solid #D9D9D9
+	.nav-tabs 
+		padding: 14px 20px 0
+		@media (max-width: 767.98px)
+			padding: 14px 4px 0
+		flex-wrap: nowrap
+		white-space: nowrap
+		overflow: auto
+		.nav-link 
+			border: none
+			color: $color-h2
+			padding-bottom: 20px
+			border-bottom: 3px solid rgba(0, 125, 197, 0)
+			&:hover 
+				color: $color-btn
+			&.active
+				color: $color-btn
+				border-bottom: 3px solid rgba(0, 125, 197, 1)
+	.tab-content
+		padding: 24px 40px 
+		@media (max-width: 767.98px)
+			padding: 24px
+		ul 
+			font-weight: 300
+			color: $color-btn
+			a 
+				color: $color-btn
+				display: inline-block
+				@media (max-width: 991.98px)
+					font-size: 13px
+				&:hover 
+					color: $color-h2
+					transform: translateX(5px)
+		.a-bottom
+			font-size: 14px
+			font-weight: bold
+			border-top: 1px solid #D9D9D9
+		.a-bottom2
+			@media (max-width: 767.98px)
+				border-bottom: 1px solid #D9D9D9
+			a 
+				color: $color-btn
+				&:hover 
+					color: $color-h2
+
+.section-3
+	.car2
+		background-color: #fff
+		border: 1px solid #D9D9D9
+	h2
+		padding-left: 40px
+		@media (max-width: 767.98px)
+			padding-left: 24px 
+		border-bottom: 1px solid #D9D9D9
+	.accord
+		padding-bottom: 70px
+		.card 
+			position: relative
+			border-bottom: 1px solid #D9D9D9 !important
+			padding: 0 40px
+			border-radius: 0
+			@media (max-width: 767.98px)
+				padding: 0 24px 
+			a 
+				font-weight: 300
+				background-color: #fff
+				border-radius: 0
+				color: $color-btn
+				&:hover
+					color: $color-h2
+				&::before, &::after
+					content: ""
+					position: absolute
+					top: 30px
+					right: 32px
+					width: 14px
+					border-top: 2px solid $color-btn           
+					transition: .55s
+				&::after 
+					transform: rotate(90deg)
+				&[aria-expanded="true"]
+					&::after 
+						opacity: 0	
+			.card-body 
+				color: $color-h2
+				font-weight: 300
+	.car3 
+		padding: 24px 40px
+		@media (max-width: 767.98px)
+			padding: 24px 
+		ul
+			li 
+				display: flex
+				margin-bottom: 9px
+				align-items: center
+				transition: $transition
+				a 
+					color: $color-btn
+					display: inline-block
+					&:hover 
+						color: $color-h2
+						transform: translateX(5px)
+				span 
+					font-size: 11px
+					color: $color-h2
+					font-weight: 300
+					background: #F1F7FB
+					border-radius: 100px
+					padding: 4px 9px
+				.zero 
+					color: #707070
+		.a-bottom2
+			font-size: 14px
+			font-weight: bold
+			border-top: 1px solid #D9D9D9
+			a 
+				color: $color-btn
+				&:hover 
+					color: $color-h2
+
+.footer 
+	padding: 130px 0 176px
+	@media (max-width: 991.98px)
+		padding: 33px 0 53px
+	.h1 
+		color: $color-h2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
